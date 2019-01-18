@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http - equiv="X-UA-Compatible" content="IE=edge">
+        <title> Ejercicio con While
+        </title>
+    </head>
+   
+    <body>
+
+    <button onclick="Inicia()">Inicia</button>
+
+    <div id="mi_saldo"> Saldo Actual: 1000£ </div>
+        
+
+        <script>
+
+    function Inicia(){      
+
+    var saldo = 1000;
+    var comprar = 0;
+
+
+
+    while(saldo > 0){
+
+        var precio = Math.floor(Math.random() *100);
+
+        if(precio <= saldo){
+            comprar += 1;
+            saldo -= precio;
+            document.getElementById("mi_saldo").innerHTML += "<p> el precio total es: £" + precio+ " .Nuevo saldo es: £" + saldo + ". </p>";
+        }
+
+
+    }
+
+
+    document.getElementById("mi_saldo").innerHTML += "<p> Has adquirido: " + comprar + " objetos. </p>";
+
+    }  
+
+        </script>
+    </body>
+</html>

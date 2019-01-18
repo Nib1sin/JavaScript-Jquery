@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Oggetti in JS</title>
+		
+		
+		
+	</head>
+	<body>
+		
+<script>
+	
+var gatto_1 = {
+nome: "Ciccio",
+razza: "europeo",
+mantello: "tigrato"
+};
+
+document.write(gatto_1["razza"] + "<br>");
+document.write(gatto_1.mantello + "<br>");
+document.write("<br><br>***********************************************<br><br>" );
+
+
+
+var gatto_2 = {}
+gatto_2.nome = "Ciccio";
+gatto_2.razza = "europeo";
+gatto_2.mantello = "tigrato";
+
+document.write(gatto_2.nome);
+document.write("<br><br>***********************************************<br><br>" );
+
+
+
+var gatto_3 = new Object();
+gatto_3.nome = "Ciccio";
+gatto_3.razza = "europeo";
+gatto_3.mantello = "tigrato";
+gatto_3.mantello = "nero";
+gatto_3.razza += " maschio"
+
+document.write(gatto_3.razza);
+document.write("<br><br>***********************************************<br><br>" );
+
+
+
+var gatto_4 = {
+nome: "Ciccio",
+razza: "europeo",
+mantello: "tigrato",
+
+proprietario: {
+		nomePr: "Mario",
+		luogo: "Roma",
+		tipologia: "allevatore"
+		}
+};
+
+document.write(gatto_4.proprietario.luogo);
+document.write("<br><br>***********************************************<br><br>" );
+
+
+
+var gatto_5 = {
+nome: "Ciccio",
+razza: "europeo",
+mantello: "tigrato",
+anni: 4,
+
+fratelli: ["Ciccia" , "Micio"],
+
+add: function (p1,p2){
+	document.write(p1 + p2 + "<br>");
+}
+
+};
+
+
+document.write(gatto_5.fratelli + "<br>");
+
+document.write(gatto_5.fratelli[1] + "<br>");
+
+gatto_5.add("pedigree","positivo");
+
+
+
+
+
+
+</script>
+
+
+	</body>
+</html>
