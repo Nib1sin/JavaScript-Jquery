@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <title>Funzione inArray</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+         $(document).ready(function(){
+
+            var fiori = ["rosa", "papavero", "ciclamino", "viola", "orchidea"];
+            $('#risultato').html('L\'elemento viola al numero:' + $.inArray('viola' , fiori, 2));
+            
+            
+        });
+    </script>
+</head>
+<body>
+   <div id="risultato"></div>
+</body>
+</html>

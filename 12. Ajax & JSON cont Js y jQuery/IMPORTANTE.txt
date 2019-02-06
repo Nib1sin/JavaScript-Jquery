@@ -1,0 +1,1 @@
+Es Importante llevar los archivos a un servidor/servidor Local para poder hacer uso del AJAX
